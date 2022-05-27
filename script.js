@@ -7,7 +7,7 @@ let password = document.querySelector("#password");
 
 let containerPassword = document.querySelector("#container-password");
 
-let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@";
+let charset = "abcdefghijklmnopqrstuvxwyzABCDEFGHIJKLMNOPQRSTUVXWYZ!@";
 let novaSenha = "";
 
 sizePassword.innerHTML = sliderElement.value;
@@ -28,7 +28,7 @@ function generatePassword(){
 }
 
 function copyPassword(){
-    alert("Senha copiada com sucesso!")
+    alert("Senha copiada com sucesso!");
     navigator.clipboard.writeText(novaSenha);
 }
 
